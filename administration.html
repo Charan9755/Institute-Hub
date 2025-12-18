@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="administration.css">
+</head>
+
+<body>
+    
+    <header>
+        <div class="heading">
+            <div class="logo" style="margin-left: 30px;">
+                <img src="assets/collegeicon.jpg" alt="logo">
+                <h2 style="color: white;">WELCOME TO INSTITUTE HUB</h2>
+                <!-- Add any other header content such as logo or slogan -->
+            </div>
+            <div class="note">
+                <p>An Institute of National Importance under Ministry of
+                    Education (Shiksha Mantralaya), Government of India</p>
+            </div>
+
+            <div id="sidebarToggle">
+                <button style="margin-right: 30px;">
+                    <img src="assets/list.png" alt="list">
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation Section -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="administration.html">Administration</a></li>
+            <li><a href="academics.html">Academics</a></li>
+            <li><a href="departments.html">Departments</a></li>
+            <li><a href="students.html">Students</a></li>
+            <li><a href="faculty.html">Faculty&Staff</a></li>
+            <li><a href="facilities.html">Facilities</a></li>
+            <li><a href="placements.html">Placements</a></li>
+        </ul>
+    </nav>
+
+
+    <div id="sidebar">
+        <div class="sidelogo">
+            <img src="assets/collegeicon.jpg" alt="logo">
+        </div>
+
+        <div class="sideheading">
+            <div class="home">
+                <img src="assets/home.png" alt="Home" style="width: 20px;height: 20px;">
+                <a href="index.html">Home</a>
+            </div>
+            <div class="home">
+                <img src="assets/icons8-administration-32.png" alt="" style="width: 20px;height: 20px;">
+                <a href="administration.html">Administration</a>
+            </div>
+            <div class="home">
+                <img src="assets/icons8-university-50.png" alt="" style="width: 20px;height: 20px;">
+                <a href="academics.html">Academics</a>
+            </div>
+            <div class="home">
+                <img src="assets/icons8-department-50.png" alt="" style="width: 20px;height: 20px;">
+                <a href="departments.html">Departments</a>
+            </div>
+            <div class="home">
+                <img src="assets/icons8-student-30.png" alt="" style="width: 20px;height: 20px;">
+                <a href="students.html">Students</a>
+            </div>
+            <div class="home">
+                <img src="assets/icons8-student-30.png" alt="" style="width: 20px;height: 20px;">
+                <a href="faculty.html">Faculty&Staff</a>
+            </div>
+            <div class="home">
+                <img src="assets/icons8-facilities-64.png" alt="" style="width: 20px;height: 20px;">
+                <a href="facilities.html">Facilities</a>
+            </div>
+            <div class="home">
+                <img src="assets/icons8-product-placement-64.png" alt="" style="width: 20px;height: 20px;">
+                <a href="placements.html">Placements</a>
+            </div>
+
+        </div>
+    </div>
+    <div class="main">
+        <div class="headings">
+            <button class="button active" onclick="showTopic('Director');buttonColor(this)">Director</button>
+            <button class="button"  onclick="showTopic('Deans'),buttonColor(this)">Deans</button>
+            <button>Registrar</button>
+            <button>Board of Governors </button>
+            <button>Senate</button>
+            <button>Buliding & Works Committee</button>
+            <button>Finance Committee</button>
+            <button>Institute Disciplinary Committee</button>
+            <button>Service Head Units</button>
+        </div>
+        
+        <div class="container">
+            <div id="Director" class="topic" style="display: block;">
+                
+                <h1 style="text-align: center;color: darkred;">Director</h1>
+                
+                <div class="profile-section">
+                    <div class="profile">
+                        <img src="clg/sai image.jpg" alt="">
+                        <h2>Sai Charan</h2>
+                    </div>
+        
+                    <div class="info">
+                        <div class="mydetails">
+                            <h3><strong>Name:</strong></h3>
+                               <p> Sai Charan Pinnelli</p>
+                            <h3><Strong>Gmail:</Strong></h3> 
+                                <p>saicharanpinnelli@gmail.com</p>
+                                <p>pinnellic.ug20.ece@nitp.ac.in</p>
+                            <h3><strong>Phone: </strong></h3>
+                                <p>+91-6301680905</p>
+                        </div>
+                        <h2 style="color: darkred;">About</h2>
+                        <div class="about">
+                            <p>This is Sai Charan Pinnelli,currently pursuing B.Tech Degree from 
+                                National Institute Of Technology Patna in the department of Electronics and 
+                                Communication Engineering.I am from Polepalle,Andhra Pradesh State.I have completed my 
+                                Intermediate in Shastra Junior College,Vijayawada with 955 marks.I completed my Secondary 
+                                School of Eduaction in Bhashyam High School,Guntur with 9.8 CGPA.I have secured 99.75% 
+                                percentile in JEE Mains in the year 2020.I have deep interest in Web Development
+                                and Software Development.I am familiar with Java Programming and some web development 
+                                skills like HTML, CSS, JavaScript, ReactJS and basic SQL programming.For getting proficient in 
+                                Web Development,I had developed some single webpage projects using frontend skills
+                                
+                            </p>
+                        </div>
+        
+                    </div>
+                </div>
+        
+            </div>
+        
+            <div id="Deans" class="topic" style="display: none;">
+                <h1 style="text-align: center;width: 100%;color: darkred;">Deans</h1>
+                <div class="dean">
+                    <b>Yaswanth</b>
+                    <p>Dean, Planning & Development</p>
+                </div>
+                <div class="dean">
+                    <b>Yoganand Charan</b>
+                    <p>Dean, Research & Consultancy</p>
+                </div>
+                <div class="dean">
+                    <b>Danayya</b>
+                    <p>Dean, Student Welfare</p>
+                </div>
+                <div class="dean">
+                    <b>Govindu</b>
+                    <p>Dean, Academic</p>
+                </div>
+                <div class="dean">
+                    <b>Pawar Sathish</b>
+                    <p>Dean, Faculty Welfare</p>
+                </div>
+                <div class="dean">
+                    <b>Krishna Vamsi</b>
+                    <p>Dean, Hostel</p>
+                </div>
+            </div>
+              
+        </div>
+    </div>
+    
+    
+    
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-container">
+            <div class="box-container">
+                <div class="box contact">
+                    <p>Contact Us</p>
+                    <li>Charan Institue of Technology</li>
+                    <li>Polepalle-522612</li>
+                    <li>Andhra Pradesh,INDIA</li>
+                    <li>Ph.No: +91-6301680905</li>
+                    <li>FAX : +91-0612-2660480</li>
+                    <li> saicharanpinnelli@gmail.com</li>
+                </div>
+
+                <div class="box">
+                    <p>Know us</p>
+                    <li>Director</li>
+                    <li>NIRF Ranking</li>
+                    <li>New Campus</li>
+                    <li>Organsiation Chart</li>
+                    <li>Institute Hub</li>
+                </div>
+
+                <div class="box">
+                    <p>Admissions</p>
+                    <li>B.Tech / B.Arch</li>
+                    <li>M.Tech / M.Arch</li>
+                    <li>Ph.D.</li>
+                    <li>MBA</li>
+                    <li>M.Sc</li>
+                    <li>Integrated M.Sc</li>
+                </div>
+
+                <div class="box">
+                    <p>Students Life</p>
+                    <li>Events</li>
+                    <li>Clubs & Associations</li>
+                    <li>Facilities & Services</li>
+                    <li>Hostel & Messes</li>
+                    <li>Office of the Dean</li>
+                </div>
+
+                <div class="box">
+                    <p>Other Links</p>
+                    <li>Tenders & Notices</li>
+                    <li>RTI</li>
+                    <li>Convocation</li>
+                    <li>Alumni</li>
+                    <li>Privacy Policy</li>
+                </div>
+            </div>
+
+            <div class="bottom-box">
+                <div>
+                    <li>&copy; Charan , Web Developer</li>
+                    <li>Welcome to INSTITUTE HUB</li>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    
+    
+    <script src="script.js"></script>
+    
+</body>
+</html>

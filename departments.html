@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="administration.css">
+    <link rel="stylesheet" href="departments.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="heading">
+            <div class="logo" style="margin-left: 30px;">
+                <img src="assets/collegeicon.jpg" alt="logo">
+                <h2 style="color: white;">WELCOME TO INSTITUTE HUB</h2>
+                <!-- Add any other header content such as logo or slogan -->
+            </div>
+            <div class="note">
+                <p>An Institute of National Importance under Ministry of
+                    Education (Shiksha Mantralaya), Government of India</p>
+            </div>
+
+            <div id="sidebarToggle">
+                <button style="margin-right: 30px;">
+                    <img src="assets/list.png" alt="list">
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation Section -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="administration.html">Administration</a></li>
+            <li><a href="academics.html">Academics</a></li>
+            <li><a href="departments.html">Departments</a></li>
+            <li><a href="students.html">Students</a></li>
+            <li><a href="faculty.html">Faculty&Staff</a></li>
+            <li><a href="facilities.html">Facilities</a></li>
+            <li><a href="placements.html">Placements</a></li>
+        </ul>
+    </nav>
+
+
+    <div id="sidebar">
+        <div class="sidelogo">
+            <img src="assets/collegeicon.jpg" alt="logo">
+        </div>
+
+        <div class="sideheading">
+            <div class="home">
+                <img src="assets/home.png" alt="Home" style="width: 20px;height: 20px;">
+                <a href="index.html">Home</a>
+            </div>
+            <div class="home">
+                <img src="assets/icons8-administration-32.png" alt="" style="width: 20px;height: 20px;">
+                <a href="administration.html">Administration</a>
+            </div>
+            <div class="home">
+                <img src="assets/icons8-university-50.png" alt="" style="width: 20px;height: 20px;">
+                <a href="academics.html">Academics</a>
+            </div>
+            <div class="home">
+                <img src="assets/icons8-department-50.png" alt="" style="width: 20px;height: 20px;">
+                <a href="departments.html">Departments</a>
+            </div>
+            <div class="home">
+                <img src="assets/icons8-student-30.png" alt="" style="width: 20px;height: 20px;">
+                <a href="students.html">Students</a>
+            </div>
+            <div class="home">
+                <img src="assets/icons8-student-30.png" alt="" style="width: 20px;height: 20px;">
+                <a href="faculty.html">Faculty&Staff</a>
+            </div>
+            <div class="home">
+                <img src="assets/icons8-facilities-64.png" alt="" style="width: 20px;height: 20px;">
+                <a href="facilities.html">Facilties</a>
+            </div>
+            <div class="home">
+                <img src="assets/icons8-product-placement-64.png" alt="" style="width: 20px;height: 20px;">
+                <a href="placements.html">Placements</a>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="headings">
+            <button class="button active" onclick="showTopic('ECE');buttonColor(this)">ECE</button>
+            <button class="button" onclick="showTopic('CSE');buttonColor(this)">CSE</button>
+            <button>MECH</button>
+            <button>CIVIL</button>
+            <button>EE</button>
+            <button>ARCH</button>
+            <button>Physics</button>
+            <button>Mathematics</button>
+            <button>HSS</button>
+
+        </div>
+
+        <div class="container">
+            <div id="ECE" class="topic" style="display: block;">
+                <h1 style="color: darkred;margin-left: 30px;">Electronics and Communication Engineering</h1>
+                <div class="ece-headings">
+                    <button class="button1 activ" onclick="showProgram('ABOUT');buttonColor1(this)">About</button>
+                    <button class="button1" onclick="showProgram('Syllabus');buttonColor1(this)">Syllabus</button>
+                    <button class="button1" onclick="showProgram('Faculty');buttonColor1(this)">Faculty</button>
+                    <button class="button1" onclick="buttonColor1(this)">Labs</button>
+                    <button class="button1" onclick="buttonColor1(this)">Contact HOD</button>
+                    <button class="button1" onclick="buttonColor1(this)">Achievements</button>
+                    <button class="button1" onclick="buttonColor1(this)">Activities</button>
+
+                </div>
+                <div class="ece-container">
+                    <div id="ABOUT" class="program" style="display: block;">
+
+                        <p>The Department of Electronics and Communication Engineering is one of the established and
+                            largest
+                            department in the institute. It was established in the year 1978 with an intake of 10
+                            students only.
+                            The Department offers B.Tech programme in "Electronics & Communication Engineering" with 161
+                            intake
+                            capacity, and M.Tech programme in "Communication System, Microelectronics and VLSI System
+                            Design" with
+                            22 intake capacity for each specialization. Department introduces dual degree program in
+                            "Microelectronics and VLSI System Design"
+                            in the year 2022 onwards with 22 intake capacity. The department is also offering Ph.D.
+                            program (Full time and Part time research program)
+                            in Electronics and Communication Engineering since 2012 provides a platform for bright
+                            graduates and postgraduates to conduct research in the following areas:
+                        </p>
+                        <li>High Power RF / Microwave Devices, Circuits and Systems. RF MEMs, Metamaterial devices
+                            ,Microwave Imaging and Remote Sensing, Absorber, Dielectric Resonator Antennas, Graphene
+                            Antennas and Filters, Polarization of Waves and wave manipulation, Micro, Milli and THz wave
+                            Antennas and devices, Computational Electromagnetics.</li> <br>
+                        <li>
+                            Image Processing, Satellite Imaging, Medical Imaging, Pattern Recognition, Machine Learning/
+                            Deep Machine Learning, and Soft Computing Techniques, Radar signal processing, Speech
+                            Analysis; Speech Enhancement; Speech Recognition; Keyword Spotting; Speaker and Language
+                            Recognition, Efficient Hardware Architectures for Speech Processing Algorithms, Biomedical
+                            Signal Processing.
+                        </li> <br>
+                        <li>Analog/RF and Digital IC Design, Design of Signal Processing Circuits using Analog Building
+                            Blocks, FPGA based System Design, Fabrication and characterization of thin films, Synthesis
+                            and characterization of nanomaterials, Low Power High Performance Robust Circuit Design,
+                            Semiconductor Device Modelling, Fabrication and characterization of thin films &
+                            Nanostructure, Nano-electronics, Photonics, Beyond CMOS Devices ,Green Electronics, Steep
+                            switching transistors
+                        </li>
+                    </div>
+
+                    <div id="Syllabus" class="program" style="display: none;">
+                        <li>Course structure for of Minor courses floated by ECE Dept. for B.Tech. (CSE, EE, CE, ME)
+                        </li>
+                        <li>B.Tech. Detailed syllabus wef 2021-2022 ( As per NEP )</li>
+                        <li>Detailed syllabus Dual Degree Programme B.Tech-ECE and M.Tech. (Microelectronics & VLSI
+                            Design) ( As per NEP )</li>
+                        <li>M.Tech. (Communication systems) wef 2021-2022 ( As per NEP )</li>
+                        <li>M.Tech. (Microelectronics & VLSI Design) wef 2021-2022</li>
+
+
+                    </div>
+
+                    <div id="Faculty" class="program" style="display: none;">
+                        <div class="professors">
+                            <div class="prof">
+                                <b>Dr. Meena Panchore</b>
+                                 <p>Assistant Professor</p>
+                             </div>
+                             <div class="prof">
+                                 <b>Dr. Bikash Chandra Sahana</b>
+                                 <p>Assistant Professor</p>
+                             </div>
+                             <div class="prof">
+                                 <b>Dr. Jagadeesh</b>
+                                 <p>Assistant Professor</p>
+                             </div>
+                             <div class="prof">
+                                <b>Dr. Subodh Srivastava</b>
+                                <p>Assisatnt Professor</p>
+                             </div>
+                             <div class="prof">
+                                <b>Dr.Akash Agarwal</b>
+                                <p>Assistant Professor</p>
+                             </div>
+                             <div class="prof">
+                                 <b>Dr. Ashish Kumar Bhandari</b>
+                                 <p>Assistant Professor</p>
+                             </div>
+                             <div class="prof">
+                                 <b>Dr. Bal Chand Nagar</b>
+                                 <p>Assistant Professor</p>
+                             </div>
+                             
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div id="CSE" class="topic" style="display: none;">
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-container">
+            <div class="box-container">
+                <div class="box contact">
+                    <p>Contact Us</p>
+                    <li>Charan Institue of Technology</li>
+                    <li>Polepalle-522612</li>
+                    <li>Andhra Pradesh,INDIA</li>
+                    <li>Ph.No: +91-6301680905</li>
+                    <li>FAX : +91-0612-2660480</li>
+                    <li> saicharanpinnelli@gmail.com</li>
+                </div>
+
+                <div class="box">
+                    <p>Know us</p>
+                    <li>Director</li>
+                    <li>NIRF Ranking</li>
+                    <li>New Campus</li>
+                    <li>Organsiation Chart</li>
+                    <li>Institute Hub</li>
+                </div>
+
+                <div class="box">
+                    <p>Admissions</p>
+                    <li>B.Tech / B.Arch</li>
+                    <li>M.Tech / M.Arch</li>
+                    <li>Ph.D.</li>
+                    <li>MBA</li>
+                    <li>M.Sc</li>
+                    <li>Integrated M.Sc</li>
+                </div>
+
+                <div class="box">
+                    <p>Students Life</p>
+                    <li>Events</li>
+                    <li>Clubs & Associations</li>
+                    <li>Facilities & Services</li>
+                    <li>Hostel & Messes</li>
+                    <li>Office of the Dean</li>
+                </div>
+
+                <div class="box">
+                    <p>Other Links</p>
+                    <li>Tenders & Notices</li>
+                    <li>RTI</li>
+                    <li>Convocation</li>
+                    <li>Alumni</li>
+                    <li>Privacy Policy</li>
+                </div>
+            </div>
+
+            <div class="bottom-box">
+                <div>
+                    <li>&copy; Charan , Web Developer</li>
+                    <li>Welcome to INSTITUTE HUB</li>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

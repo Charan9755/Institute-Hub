@@ -1,0 +1,61 @@
+.admission{
+    margin: auto;
+    padding: 0px 30px;
+    padding-bottom: 20px;
+}
+.admission li{
+    line-height: 30px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.admission p{
+    line-height: 30px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+#Programmes{
+    flex-direction: column;
+
+}
+.prog-buttons {
+   margin-left: 10px;
+  
+}
+.prog-buttons button{
+    border: none;
+    border-radius: 4px;
+    height: 30px;
+    margin-left: 20px;
+    transition: 0.4s ease-in-out;
+}
+.prog-buttons button:hover{
+    transform: scale(1.1);
+    background-color: brown;
+    color: white;
+}
+.program{
+    margin: auto;
+    padding: 0px 30px;
+    padding-bottom: 20px;
+}
+
+.program-container ul li{
+    line-height: 30px;
+    font-size: 1.2rem;
+    cursor: pointer;
+
+}
+
+#Departments{
+    flex-direction: column;
+    margin: auto;
+    padding: 0px 30px;
+    padding-bottom: 20px;
+}
+#Departments ul li{
+    line-height: 30px;
+    font-size: 1.2rem;
+    cursor: pointer;
+
+}
+

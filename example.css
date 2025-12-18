@@ -1,0 +1,14 @@
+
+.products-container{
+    width: 300px;
+    
+    overflow-x: auto;
+    white-space: nowrap;
+}
+.product-card{
+    border: 1px solid black;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+}

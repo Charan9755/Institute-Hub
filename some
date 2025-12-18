@@ -1,0 +1,32 @@
+<!-- Main Content Section -->
+  <main>
+    <!-- About Us Section -->
+    <section id="about">
+      <h2>About Us</h2>
+      <!-- Add content about the institute -->
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses">
+      <h2>Our Courses</h2>
+      <!-- Add information about the courses offered -->
+    </section>
+
+    <!-- Admissions Section -->
+    <section id="admissions">
+      <h2>Admissions</h2>
+      <!-- Add information about admission process, requirements, etc. -->
+    </section>
+
+    <!-- Events Section -->
+    <section id="events">
+      <h2>Events</h2>
+      <!-- Add information about upcoming events or past events -->
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <!-- Add contact information and a contact form -->
+    </section>
+  </main> 

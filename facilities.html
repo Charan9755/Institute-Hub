@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="administration.css">
+    <link rel="stylesheet" href="facilities.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="heading">
+            <div class="logo" style="margin-left: 30px;">
+                <img src="assets/collegeicon.jpg" alt="logo">
+                <h2 style="color: white;">WELCOME TO INSTITUTE HUB</h2>
+                <!-- Add any other header content such as logo or slogan -->
+            </div>
+            <div class="note">
+                <p>An Institute of National Importance under Ministry of
+                    Education (Shiksha Mantralaya), Government of India</p>
+            </div>
+
+            <div id="sidebarToggle">
+                <button style="margin-right: 30px;">
+                    <img src="assets/list.png" alt="list">
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation Section -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="administration.html">Administration</a></li>
+            <li><a href="academics.html">Academics</a></li>
+            <li><a href="departments.html">Departments</a></li>
+            <li><a href="students.html">Students</a></li>
+            <li><a href="faculty.html">Faculty&Staff</a></li>
+            <li><a href="facilities.html">Facilties</a></li>
+            <li><a href="placements.html">Placements</a></li>
+        </ul>
+    </nav>
+
+
+    <div id="sidebar">
+        <div class="sidelogo">
+            <img src="assets/collegeicon.jpg" alt="logo">
+        </div>
+
+        <div class="sideheading">
+            <div class="home">
+                <img src="assets/home.png" alt="Home" style="width: 20px;height: 20px;">
+                <a href="index.html">Home</a>
+            </div>
+            <div class="home">
+                <img src="assets/icons8-administration-32.png" alt="" style="width: 20px;height: 20px;">
+                <a href="administration.html">Administration</a>
+            </div>
+            <div class="home">
+                <img src="assets/icons8-university-50.png" alt="" style="width: 20px;height: 20px;">
+                <a href="academics.html">Academics</a>
+            </div>
+            <div class="home">
+                <img src="assets/icons8-department-50.png" alt="" style="width: 20px;height: 20px;">
+                <a href="departments.html">Departments</a>
+            </div>
+            <div class="home">
+                <img src="assets/icons8-student-30.png" alt="" style="width: 20px;height: 20px;">
+                <a href="students.html">Students</a>
+            </div>
+            <div class="home">
+                <img src="assets/icons8-student-30.png" alt="" style="width: 20px;height: 20px;">
+                <a href="faculty.html">Faculty&Staff</a>
+            </div>
+            <div class="home">
+                <img src="assets/icons8-facilities-64.png" alt="" style="width: 20px;height: 20px;">
+                <a href="facilities.html">Facilties</a>
+            </div>
+            <div class="home">
+                <img src="assets/icons8-product-placement-64.png" alt="" style="width: 20px;height: 20px;">
+                <a href="placements.html">Placements</a>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="headings">
+            <button class="button active" onclick="showTopic('Computer');buttonColor(this)">Computer Centre</button>
+            <button class="button" onclick="showTopic('Library');buttonColor(this)">Library</button>
+            <button class="button" onclick="showTopic('Medical');buttonColor(this)">Medical Facilities</button>
+            <button>Sport Facilities</button>
+            <button>Hostel&Mess</button>
+            <button>Laboratories</button>
+            <button>Bank</button>
+            <button>Security</button>
+            <button>Woman Cell</button>
+            <button>EMU</button>
+            <button>ESU</button>
+        </div>
+
+        <div class="container">
+            <div id="Computer" class="topic" style="display: block;">
+                <h1>Centre for Computing and Information Services(CCIS)</h1>
+                <div style="display: flex;padding: 0px 20px">
+                    <img src="clg/computer.png" alt="">
+                    <p>A state-of-the-art Computer Centre started its operation on 27th November 2011. It serves as the
+                        central computing facility for the students, research scholars and teachers of the institute.
+                        The
+                        Centre is well equipped with modern Computers (190 in number), air conditioned labs and
+                        stabilized
+                        uninterrupted power supply among the other facilities. The Centre has seven labs for all the
+                        students and one lab exclusively for PhD scholars of the institute. All labs are equipped with
+                        IP
+                        cameras to monitor the activities remotely. The Centre has 1 Gbps, 24x7 internet connectivity on
+                        optical fiber under National Knowledge Network, Govt. of India.The Centre also has a Virtual
+                        Class
+                        Room and Desktop VideoConferencing facility. It operates from 8:30 AM to 5:30 PM.
+                    </p>
+                </div>
+            </div>
+
+            <div id="Library" class="topic" style="display: none;flex-direction: column;">
+                <h1>Library</h1>
+                <div style="display: flex;padding-right:30px">
+                    <p>The Central library of the institute owns a vast stock of over 75,000 books catering to the needs
+                        of all the relevant fields of engineering. It has a resourceful stock of over 10,000 computer
+                        related books and clearly demarcated section for every engineering branch and architecture. In
+                        addition to the engineering pertinent books, the central library is self-sufficient in a vivid
+                        category of other business and current affairs related magazines, pamphlets and journals which
+                        includes TIME and NEWSWEEK.The Central Library is fully automated and all operations are
+                        performed with the help of Libsys - Library Automation Software.The students can issue a
+                        sufficient no.of books for use throughout the semester and an additional no.of books for special
+                        reference.</p>
+                    <img src="clg/library (1).jpg" alt="">
+                </div>
+
+                <h2>Special features of Central Library</h2>
+                <li> Separate zones for every department.</li>
+                <li>Separate section for SC/ST under the name of B.R. Ambedkar section.</li>
+                <li>Separate section for e-journals called the E-Resource Section.</li>
+                <li>Calm milieu and spacious studying facility within the library.</li>
+                <li> Centrally air-conditioned.</li>
+                <li>Library is the member of INDEST and DELNET</li>
+
+            </div>
+
+            <div id="Medical" class="topic" style="display: none;flex-direction: column;">
+                <h1>Medical Facilities</h1>
+                <div style="display: flex;padding-right:30px">
+                    <div>
+                        <p>Two permanent doctor has a fixed chamber within the institute premises. He can be consulted
+                            by
+                            the students and employees for any health related problems on every working day free of
+                            cost.
+                        </p>
+                        <p>Profile of the health consultants:</p>
+                        <p>Dr.Vikas Kumar Raj</p>
+                        <li>Senior Medical Officer</li>
+                        <li>MBBS, MD, MBA(HCA)</li>
+                        <li>PGD in DP & R and Family Medicine</li>
+                        <li>PGC in Hospital Management Dr.V K Raj</li>
+
+                        <p>Dr.Santosh Kumar Sudhakar</p>
+                        <li>Medical Officer</li>
+                        <li>MBBS</li>
+                        <li>Ex - Resident of DR.RML Hospital</li>
+                        <li>New Delhi Dr.S K Sudhakar</li>
+                        <p>The institute also maintains a 24x7 ambulance which is used for transferring patients from
+                            the institute to Patna Medical College and Hospital(PMCH) in case of any emergency.
+                        </p>
+                    </div>
+                    <img src="clg/medical.jpg" alt="">
+
+                </div>
+
+            </div>
+
+
+
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-container">
+            <div class="box-container">
+                <div class="box contact">
+                    <p>Contact Us</p>
+                    <li>Charan Institue of Technology</li>
+                    <li>Polepalle-522612</li>
+                    <li>Andhra Pradesh,INDIA</li>
+                    <li>Ph.No: +91-6301680905</li>
+                    <li>FAX : +91-0612-2660480</li>
+                    <li> saicharanpinnelli@gmail.com</li>
+                </div>
+
+                <div class="box">
+                    <p>Know us</p>
+                    <li>Director</li>
+                    <li>NIRF Ranking</li>
+                    <li>New Campus</li>
+                    <li>Organsiation Chart</li>
+                    <li>Institute Hub</li>
+                </div>
+
+                <div class="box">
+                    <p>Admissions</p>
+                    <li>B.Tech / B.Arch</li>
+                    <li>M.Tech / M.Arch</li>
+                    <li>Ph.D.</li>
+                    <li>MBA</li>
+                    <li>M.Sc</li>
+                    <li>Integrated M.Sc</li>
+                </div>
+
+                <div class="box">
+                    <p>Students Life</p>
+                    <li>Events</li>
+                    <li>Clubs & Associations</li>
+                    <li>Facilities & Services</li>
+                    <li>Hostel & Messes</li>
+                    <li>Office of the Dean</li>
+                </div>
+
+                <div class="box">
+                    <p>Other Links</p>
+                    <li>Tenders & Notices</li>
+                    <li>RTI</li>
+                    <li>Convocation</li>
+                    <li>Alumni</li>
+                    <li>Privacy Policy</li>
+                </div>
+            </div>
+
+            <div class="bottom-box">
+                <div>
+                    <li>&copy; Charan , Web Developer</li>
+                    <li>Welcome to INSTITUTE HUB</li>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

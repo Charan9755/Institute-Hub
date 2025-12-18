@@ -1,0 +1,23 @@
+.container{
+    padding-bottom: 20px;
+}
+#Computer{
+    flex-direction: column;
+}
+.container h1,.container h2{
+    margin-left: 30px;
+    color: darkred;
+}
+.container img{
+    display: flex;
+    margin: auto;
+    width: 400px;
+}
+
+.container p,.container li{
+    padding: 0 30px;
+    letter-spacing: 1px;
+    line-height: 25px;
+    font-size: 1rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}

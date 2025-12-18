@@ -1,0 +1,437 @@
+/*Here's a simple CSS code snippet to style the basic structure of the institute website provided in the HTML code:
+
+css
+/* General Styles */
+body {
+  font-family: 'Times New Roman', Times, serif;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+}
+
+.heading {
+  background-color: rgb(1, 1, 59);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0px;
+  color: white;
+  
+}
+.note{
+  display: flex;
+  width: 40%;
+  align-items: center;
+  margin-right: 50px;
+}
+.note p{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+  
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+}
+.logo img{
+  width: 70px;
+  height: 70px;
+  padding-right: 10px;
+}
+
+#sidebarToggle button img{
+  display: flex;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+}
+
+/* nav bar starts */
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  color: #333;
+  text-decoration: none;
+}
+
+nav ul li a:hover{
+  color: orangered;
+}
+/* nav bar ends */
+
+/* nav bar Responsive Styles  starts*/
+@media only screen and (max-width: 768px) {
+  nav ul {
+    display: none;
+  }
+
+  nav ul li {
+    display: none;
+    margin-bottom: 10px;
+  }
+  .note{
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: black ;
+  }
+  nav ul li {
+    padding: 8px 10px; 
+    font-weight: 500;
+  }
+
+  nav ul li a{
+    color: white;
+  }
+}
+/* nav bar responsive ends */
+
+
+/* slider container starts */
+.slider-container {
+  display: flex;
+  /* Adjust as needed */
+  justify-content: space-between;
+  padding: 0px 10px;
+}
+.slider{
+  width: 100%;
+  max-width: 650px; 
+  display: flex; 
+}
+
+.slider img {
+  width: 100%;
+  height: 425px;
+  display: none;
+}
+
+.slider img:first-child {
+  display: block;
+} 
+
+.notice{
+  width: relative;
+  background-color: #fff;
+  padding: 10px 0px; 
+}
+.notice h2{
+  margin-left: 20px;
+  color:darkgreen
+}
+
+.notice li{ 
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.9rem;
+  color: rgb(29, 8, 164);
+  list-style-type: none;
+  margin-left: 25px;
+  margin-bottom: 12px;
+  font-weight: 550;
+}
+
+
+
+@media only screen and (min-width: 768px) {
+
+  .slider img {
+    /* Adjust image size for smaller screens */
+    width: 100%;
+  }
+  
+}
+
+@media only screen and (max-width: 768px) {
+  .slider-container{
+    display: block;
+  }
+  .slider{
+    margin: auto;
+    width: 100%;
+  }
+ 
+  .notice{
+    width: 100%;
+  }  
+}
+/*slider container ends  */
+
+main {
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+/* Styles for Sections */
+section h2 {
+  color: #333;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+}
+
+ /*sidebar components  */
+ 
+#sidebar.open {
+  left: 0;
+}
+#sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+  height: 100%;
+  background-color: #dde6ed;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  left: -200px;
+  transition: left 0.5s ease;
+  overflow: scroll;
+  scrollbar-width: none;
+}
+
+#sidebar .sidelogo img{
+  margin: 20px 0px;
+  width: 80px;
+  height: 80px;
+  
+}
+.sideheading {
+  display: flex;
+  flex-direction: column;
+  
+  font-size: 1.1rem; 
+}
+
+.home{
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  
+}
+.home a{
+  color: #27374d;
+  text-decoration: none;
+  margin: 30px 0px;
+  font-weight: 550;
+}
+.home img{ 
+  padding-right: 10px;
+  transition: 0.3s ease-in-out;
+}
+
+.home img:hover{
+  transform: scale(1.2); 
+}
+
+/* For displaying sidebar */
+@media only screen and (max-width: 768px){
+  #sidebar{
+    width: 200px;
+    z-index: 1;
+  }
+
+  #sidebarToggle{
+    display: block;
+  }
+
+  .box-container{
+    flex-wrap: wrap;
+  }
+  .box-container .contact{
+    width: 100%;
+  }
+}
+
+/* for hidding sidebar  */
+@media screen and (min-width: 769px) {
+  #sidebarToggle{
+    display: none;
+  }
+  #sidebar{
+    z-index: 1;
+  }
+} 
+
+@media screen and (max-width: 300px) {
+  #sidebarToggle{
+    display: none;
+  }
+ 
+} 
+
+
+
+/* notices-container */
+.notice-container{
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 20px;
+  height: 100%;
+}
+.notices{
+  background-color: rgb(245, 245, 245);
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 10px 20px;
+  margin-left: 10px;
+  border-radius: 4px;
+}
+.notices h2{
+  font-size: 1.5rem;
+  color: rgb(216, 5, 5);
+  
+}
+.head{
+  display: flex;
+  height: 50px;
+  align-items: center;
+}
+.notices .card{
+  height: 280px;
+  padding: 10px;
+  overflow: scroll;
+  scrollbar-width: none;
+}
+.notices .head a{
+  text-decoration: none;
+  margin-left: auto;
+  font-weight: 600;
+}
+
+.notices .card p{
+  padding-bottom: 8px;
+  color: rgb(25, 3, 115);
+  font-weight: bold;
+}
+.notices .card ul li{
+  padding-bottom: 10px;
+  color: darkmagenta;
+  font-weight: bold;
+}
+
+@media only screen and (max-width:1024px){
+  .notice-container{
+    flex-direction: column;
+  }
+  .notices{
+    width: 100%;
+  }
+  .notices .card p{
+    width: 100%;
+  }
+}
+
+.research-container{
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0px 20px;
+  margin-top: 10px;
+}
+
+@media only screen and (max-width:1024px){
+  .research-container{
+    flex-direction: column;
+  }
+
+}
+/* gallery starts*/
+.gallery{
+  width: relative;
+  white-space: nowrap;
+  margin: 10px 30px; 
+}
+.image-wrapper{
+  display: inline-block;
+  width: 100%;
+  overflow-x: scroll;
+  scrollbar-width: none;
+}
+.image-wrapper img{
+  margin: 2px 1px;
+  height: 252px;
+  width: 296px;
+}
+.gallery h2{
+  color: rgb(52, 1, 1);
+  margin-left: 10px;
+}
+
+/* footer */
+footer {
+  background-color: rgb(2, 2, 71);
+  color: #fff;
+}
+.box-container{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+}
+.box{
+  padding: 10px;
+}
+.box p{
+  font-size: 1.5rem;
+}
+.box li{
+  font-family: Arial, Helvetica, sans-serif;
+  list-style-type: none;
+  font-size: 0.8rem;
+  padding-bottom: 3px;
+  padding-left: 3px;
+  transition: 0.5s ease-in-out;
+}
+.box li:hover{
+  color: orangered;
+  transform: scale(1.05);
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.bottom-box{
+  background-color: rgb(0, 0, 37);
+  display: flex;
+  margin: auto;
+  padding: 20px 40px;
+}
+.bottom-box li{
+  list-style-type: none;
+  padding-bottom: 4px;
+  font-size: 1.2rem;
+  transition: 0.5s ease-in-out;
+}
+.bottom-box li:hover{
+  color: orangered;
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+
+
+
+

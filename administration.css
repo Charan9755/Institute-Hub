@@ -1,0 +1,125 @@
+.main {
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    height: 470px;
+    margin: 20px 0px;
+    margin-left: 50px;
+    margin-right: 100px;
+    box-shadow: 0 0 8px silver;
+    overflow: scroll;
+    scrollbar-width: none;
+
+}
+
+#Director {
+    height: 460px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+    scrollbar-width: none;
+}
+
+.profile-section {
+    display: flex;
+    padding: 0px 40px;
+    flex-wrap: wrap;
+}
+
+.profile {
+    text-align: center;
+}
+
+.info {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 30px;
+}
+
+.mydetails {
+    padding: 0px 30px;
+    box-shadow: 1px 2px 2px silver;
+    background-color: rgb(249, 246, 241);
+}
+
+.about {
+    padding: 0px 30px;
+    box-shadow: 1px 2px 2px silver;
+    background-color: rgb(249, 246, 241);
+}
+
+.about p {
+    margin-bottom: 5px;
+    font-size: 1.2rem;
+    line-height: 30px;
+    letter-spacing: 2px;
+}
+
+.profile img {
+    width: 200px;
+    height: 220px;
+    border-radius: 50%;
+}
+
+.headings button {
+    display: block;
+    border: 1px solid black;
+    width: 150px;
+    padding: 8px 5px;
+    margin-left: 20px;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.headings button:hover {
+    background-color: darkblue;
+    color: white;
+    transform: scale(1.1);
+}
+
+#Deans {
+    height: 460px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: scroll;
+    scrollbar-width: none;
+}
+
+.dean {
+    display: flex;
+    flex-direction: column;
+    margin: 30px auto;
+    width: 350px;
+    height: 150px;
+    text-align: center;
+    justify-content: center;
+    box-shadow: 1px 2px 2px rgb(224, 224, 224);
+    background-color: rgb(237, 229, 213);
+    border-radius: 10px;
+}
+
+.dean b {
+    font-size: 1.3rem;
+}
+
+.active {
+    background-color: darkblue;
+    color: white;
+    /* Change the color as per your preference */
+}
+
+.activ {
+    background-color: brown;
+    color: white;
+}

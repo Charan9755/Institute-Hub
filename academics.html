@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="academics.css">
+    <link rel="stylesheet" href="administration.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="heading">
+            <div class="logo" style="margin-left: 30px;">
+                <img src="assets/collegeicon.jpg" alt="logo">
+                <h2 style="color: white;">WELCOME TO INSTITUTE HUB</h2>
+                <!-- Add any other header content such as logo or slogan -->
+            </div>
+            <div class="note">
+                <p>An Institute of National Importance under Ministry of
+                    Education (Shiksha Mantralaya), Government of India</p>
+            </div>
+
+            <div id="sidebarToggle">
+                <button style="margin-right: 30px;">
+                    <img src="assets/list.png" alt="list">
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation Section -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="administration.html">Administration</a></li>
+            <li><a href="academics.html">Academics</a></li>
+            <li><a href="departments.html">Departments</a></li>
+            <li><a href="students.html">Students</a></li>
+            <li><a href="faculty.html">Faculty&Staff</a></li>
+            <li><a href="facilities.html">Facilties</a></li>
+            <li><a href="placements.html">Placements</a></li>
+        </ul>
+    </nav>
+
+
+    <div id="sidebar">
+        <div class="sidelogo">
+            <img src="assets/collegeicon.jpg" alt="logo">
+        </div>
+
+        <div class="sideheading">
+            <div class="home">
+                <img src="assets/home.png" alt="Home" style="width: 20px;height: 20px;">
+                <a href="index.html">Home</a>
+            </div>
+            <div class="home">
+                <img src="assets/icons8-administration-32.png" alt="" style="width: 20px;height: 20px;">
+                <a href="administration.html">Administration</a>
+            </div>
+            <div class="home">
+                <img src="assets/icons8-university-50.png" alt="" style="width: 20px;height: 20px;">
+                <a href="academics.html">Academics</a>
+            </div>
+            <div class="home">
+                <img src="assets/icons8-department-50.png" alt="" style="width: 20px;height: 20px;">
+                <a href="departments.html">Departments</a>
+            </div>
+            <div class="home">
+                <img src="assets/icons8-student-30.png" alt="" style="width: 20px;height: 20px;">
+                <a href="students.html">Students</a>
+            </div>
+            <div class="home">
+                <img src="assets/icons8-student-30.png" alt="" style="width: 20px;height: 20px;">
+                <a href="faculty.html">Faculty&Staff</a>
+            </div>
+            <div class="home">
+                <img src="assets/icons8-facilities-64.png" alt="" style="width: 20px;height: 20px;">
+                <a href="facilities.html">Facilties</a>
+            </div>
+            <div class="home">
+                <img src="assets/icons8-product-placement-64.png" alt="" style="width: 20px;height: 20px;">
+                <a href="placements.html">Placements</a>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="headings">
+            <button class="button active" onclick="showTopic('Admissions');buttonColor(this)">Admissions</button>
+            <button class="button" onclick="showTopic('Programmes');buttonColor(this)">Programmes</button>
+            <button class="button" onclick="showTopic('Departments');buttonColor(this)">Departments</button>
+            <button>Academic Notes</button>
+            <button>Regualtion & Cirrucula</button>
+            <button>Refund Policy</button>
+            <button>Fees Structures</button>
+            <button>Centre of Excellence</button>
+            <button>Patents</button>
+        </div>
+
+        <div class="container">
+            <div id="Admissions" class="topic" style="display: block;">
+                <div class="admission">
+                    <h1 style="color: darkred;">Admissions</h1>
+
+                    <li>Change of Branch for the session 2023-24</li>
+                    <li>Minor Program for B.TECH Students</li>
+
+                    <h3 style="color: darkred;">JoSAA/CSAB/DASA-2023</h3>
+                    <p style="color: orangered;">Notice: There will be NO physical reporting for UG
+                        admission through JoSAA/CSAB/DASA-2023 on 15.08.2023 (Independence Day)</p>
+                    <li>Notice regarding Physical reporting for Admission to UG_Programme through JoSAA/CSAB/DASA-2023
+                    </li>
+                    <li>Click here for Fee Payment</li>
+                    <li>Click here for filling online Admission form</li>
+                    <li>Information</li>
+                    <li>FAQs and General Instructions for UG Admission</li>
+
+                    <h3 style="color: darkred;">CCMT Counselling 2023</h3>
+                    <li>CCMT 2023</li>
+                    <li>Contact Details:(Email ID: acad.help@nitp.ac.in Contact: 0612 2371715 Extension no 172)</li>
+                    <li>Fee Details: Link-1</li>
+                    <li>Fee Details: Link-2</li>
+                    <li> M.Tech/MURP (PG) REGULATION</li>
+
+                </div>
+            </div>
+
+            <div id="Programmes" class="topic" style="display: none;">
+                <h1 style="color: darkred;margin-left: 30px;">Programmes</h1>
+                <div class="prog-buttons">
+                    <button class="button1 activ" onclick="showProgram('UG Course Structure');buttonColor1(this)">UG Course Structure</button>
+                    <button class="button1" onclick="showProgram('PG (M.tech/MURP) Course Structure');buttonColor1(this)">PG (M.tech/MURP) Course
+                        Structure</button>
+                    <button>M.tech/MURP-PHD (DD)</button>
+                    <button>Integrated M.sc</button>
+                </div>
+
+                <div class="program-container">
+
+                    <div id="UG Course Structure" class="program" style="display: block;">
+                        <h3 style="color: darkred;">UG Course Structure</h3>
+
+                        <ul>
+                            <li>Bachelor of Architecture (ARUG)</li>
+                            <li>Bachelor of Civil Engineering (CEUG)</li>
+                            <li>Bachelor of Computer Science & Engineering (CSUG)</li>
+                            <li>CSUG 2018-19</li>
+                            <li>Bachelor of Electronics & Communication Engineering (ECUG)</li>
+                            <li>ECUG 2018-19</li>
+                            <li>Bachelor of Electrical Engineering (EEUG) for 2014 & 2015 Batch</li>
+                            <li>Bachelor of Mechanical Engineering (MEUG)</li>
+                            <li>MEUG 2018-19</li>
+                            <li>Bachelor of Information Technology (ITUG)</li>
+                        </ul>
+                    </div>
+
+                    <div id="PG (M.tech/MURP) Course Structure" class="program" style="display: none;">
+                        <h3 style="color: darkred;">PG (M.tech/MURP) Course Structure</h3>
+                        <ul>
+                            <li>M. Tech (Civil Engg.) in Environmental Engineering</li>
+                            <li>M.TECH. IN CIVIL ENGINEERING</li>
+                            <li>Master in Civil Engineering (River)</li>
+                            <li>M. Tech (Civil Engg.) in Structural Engineering</li>
+                            <li>M.TECH. IN CIVIL ENGINEERING (TRANSPORTATION)</li>
+                            <li>CEPG (Water Resources)</li>
+                            <li>Master in Computer Science & Technology</li>
+                            <li>ECPG (Communication)</li>
+                            <li>ECPG (VLSI)</li>
+                            <li>EE (Power System)</li>
+                            <li>EEPG (Control System)</li>
+                            <li>Master in Information Technology</li>
+                            <li>MAPG</li>
+                            <li>Master of Mechanical Engineering (MEPG) Production</li>
+                            <li>MEPG (Thermal)</li>
+                            <li>Master of Mechanical Engineering (MEPG) Design</li>
+                            <li>Master of Urban & Regional Planning</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="Departments" class="topic" style="display: none;">
+                <h1 style="color: darkred;">Departments</h1>
+                <div>
+                    <ul>
+                        <li>Architecture</li>
+                        <li>Chemistry</li>
+                        <li>Civil Engineering</li>
+                        <li>Computer Science and Engineering</li>
+                        <li>Electrical Engineering</li>
+                        <li>Electronics and Communication Engineering</li>
+                        <li>Humanities & Social Sciences</li>
+                        <li> Mathematics</li>
+                        <li>Mechanical Engineering</li>
+                        <li>Physics</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-container">
+            <div class="box-container">
+                <div class="box contact">
+                    <p>Contact Us</p>
+                    <li>Charan Institue of Technology</li>
+                    <li>Polepalle-522612</li>
+                    <li>Andhra Pradesh,INDIA</li>
+                    <li>Ph.No: +91-6301680905</li>
+                    <li>FAX : +91-0612-2660480</li>
+                    <li> saicharanpinnelli@gmail.com</li>
+                </div>
+
+                <div class="box">
+                    <p>Know us</p>
+                    <li>Director</li>
+                    <li>NIRF Ranking</li>
+                    <li>New Campus</li>
+                    <li>Organsiation Chart</li>
+                    <li>Institute Hub</li>
+                </div>
+
+                <div class="box">
+                    <p>Admissions</p>
+                    <li>B.Tech / B.Arch</li>
+                    <li>M.Tech / M.Arch</li>
+                    <li>Ph.D.</li>
+                    <li>MBA</li>
+                    <li>M.Sc</li>
+                    <li>Integrated M.Sc</li>
+                </div>
+
+                <div class="box">
+                    <p>Students Life</p>
+                    <li>Events</li>
+                    <li>Clubs & Associations</li>
+                    <li>Facilities & Services</li>
+                    <li>Hostel & Messes</li>
+                    <li>Office of the Dean</li>
+                </div>
+
+                <div class="box">
+                    <p>Other Links</p>
+                    <li>Tenders & Notices</li>
+                    <li>RTI</li>
+                    <li>Convocation</li>
+                    <li>Alumni</li>
+                    <li>Privacy Policy</li>
+                </div>
+            </div>
+
+            <div class="bottom-box">
+                <div>
+                    <li>&copy; Charan , Web Developer</li>
+                    <li>Welcome to INSTITUTE HUB</li>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

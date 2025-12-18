@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Topic-based Body Section Change</title>
+</head>
+<body>
+
+<!-- Topic 1: Solar Power -->
+<div id="solarPower" class="topic" style="display: block;">
+  <h1>Solar Power</h1>
+  <p>Solar power is a renewable energy source that harnesses sunlight to generate electricity. Its popularity has grown significantly in recent years due to its environmental benefits and decreasing costs.</p>
+  <!-- Your specific content for solar power -->
+</div>
+
+<!-- Topic 2: Wind Power -->
+<div id="windPower" class="topic" style="display: flex;">
+  <h1>Wind Power</h1>
+  <p>Wind power is another renewable energy source that has gained traction in the push for cleaner energy alternatives. By harnessing the power of wind, electricity can be generated with minimal environmental impact.</p>
+  <!-- Your specific content for wind power -->
+</div>
+
+<script>
+  function showTopic(topicId) {
+    var topics = document.querySelectorAll('.topic');
+    topics.forEach(function(topic) {
+      if (topic.id === topicId) {
+        topic.style.display = 'block';
+      } else {
+        topic.style.display = 'none';
+      }
+    });
+  }
+</script>
+
+<button onclick="showTopic('solarPower')">Solar Power</button>
+<button onclick="showTopic('windPower')">Wind Power</button>
+
+</body>
+</html>
